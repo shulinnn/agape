@@ -1,11 +1,7 @@
 import Navbar from "./partials/navbar/Navbar";
 
 function App() {
-  return (
-    <div className="container bg-blue-400">
-      <Navbar />
-    </div>
-  );
+  return <Navbar />;
 }
 
 export default App;
