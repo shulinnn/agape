@@ -6,7 +6,7 @@ afterEach(() => {
   cleanup(); // Resets the DOM after each test suite
 });
 
-describe("Navbar Component", () => {
+describe("Navbar Component", (navbar) => {
   test("Render LOL", () => {
     expect(navbar).toHaveTextContent("LOL");
   });
