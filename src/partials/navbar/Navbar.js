@@ -1,5 +1,5 @@
 function Navbar() {
-  return "LOOOOOOOOOL";
+  return "LOL";
 }
 
 export default Navbar;
