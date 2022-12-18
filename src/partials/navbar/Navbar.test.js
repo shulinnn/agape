@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Navbar from "./navbar";
+import Navbar from "navbar";
 
 test("renders navbar with text LOL", () => {
   render(<Navbar />);
