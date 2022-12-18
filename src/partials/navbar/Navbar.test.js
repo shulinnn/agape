@@ -1,13 +1,8 @@
-const { cleanup } = require("@testing-library/react");
-const navbar = require("./Navbar");
+import { render, screen } from "@testing-library/react";
+import Navbar from "./navbar";
 
-// afterEach function runs after each test suite is executed
-afterEach(() => {
-  cleanup(); // Resets the DOM after each test suite
-});
-
-describe("Navbar Component", () => {
-  test("Render LOL", () => {
-    expect(navbar).toHaveTextContent("LOL");
-  });
+test("renders navbar with text LOL", () => {
+  render(<Navbar />);
+  const linkElement = screen.getByText(/LOL/i);
+  expect(linkElement).toBeInTheDocument();
 });
