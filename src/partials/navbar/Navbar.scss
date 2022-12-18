@@ -1,0 +1,15 @@
+.navbar {
+  @apply p-4;
+  @apply bg-white;
+
+  &-wrapper {
+    @apply flex;
+    @apply flex-row;
+    @apply justify-between;
+    @apply w-full;
+
+    & span {
+        @apply text-2xl;
+    }
+  }
+}
