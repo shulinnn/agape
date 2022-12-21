@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import NavbarLink from "components/NavbarLink";
 import { Menu, X } from "react-feather";
 
-import "./Navbar.scss";
+import "./Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,18 @@ function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="navbar-wrapper">
-          <span>AGAPE</span>
+        <div className="navbar wrapper">
+          <ul>
+            <li>ÚVOD</li>
+            <li>O NÁS</li>
+            <li>NAŠE POKOJE</li>
+          </ul>
+          <span>Penziony Luhačovice</span>
+          <ul>
+            <li>GALERIE</li>
+            <li>KONTAKT</li>
+            <li>REZERVACE</li>
+          </ul>
           {!isOpen ? (
             <Menu
               color="black"
@@ -29,6 +40,16 @@ function Navbar() {
             <X color="black" size={32} strokeWidth={1} onClick={handleToggle} />
           )}
         </div>
+        {isOpen && (
+          <ul className="mobile-menu">
+            <NavbarLink linkName="ÚVOD" />
+            <NavbarLink linkName="O NÁS" />
+            <NavbarLink linkName="NAŠE POKOJE" />
+            <NavbarLink linkName="GALERIE" />
+            <NavbarLink linkName="KONTAKT" />
+            <NavbarLink linkName="REZERVACE" />
+          </ul>
+        )}
       </div>
     </>
   );
