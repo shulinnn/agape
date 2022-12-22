@@ -1,7 +1,7 @@
 import "./RoomTag.css";
 
-function RoomTag() {
-  return <span className="room-tag">tv</span>;
+function RoomTag(props) {
+  return <span className="room-tag">{props.tagName}</span>;
 }
 
 export default RoomTag;

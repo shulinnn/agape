@@ -3,6 +3,7 @@ import NavbarLink from "components/NavbarLink";
 import { Menu, X } from "react-feather";
 
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,9 @@ function Navbar() {
       <div className="navbar">
         <div className="navbar wrapper">
           <ul>
-            <li>ÚVOD</li>
+            <Link to={"/"}>
+              <li>ÚVOD</li>
+            </Link>
             <li>O NÁS</li>
             <li>NAŠE POKOJE</li>
           </ul>

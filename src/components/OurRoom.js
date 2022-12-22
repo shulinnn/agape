@@ -10,8 +10,10 @@ function OurRoom(props) {
           <h1>Pokoj č.1</h1>
           <span>Od 2000 Kč / noc</span>
           <div className="tags">
-            <RoomTag />
-            <RoomTag />
+            <RoomTag tagName="tv" />
+            <RoomTag tagName="koupelna" />
+            <RoomTag tagName="lednice" />
+            <RoomTag tagName="radio" />
           </div>
         </div>
       </div>

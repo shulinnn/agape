@@ -1,0 +1,8 @@
+.room-tag {
+  padding: 0.375rem;
+  border-radius: 0.375rem;
+  font-size: 12px !important;
+  font-family: "Merriweather", serif;
+  color: white !important;
+  background-color: #839f18;
+}

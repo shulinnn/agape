@@ -1,15 +1,19 @@
-import PensionItem from "../components/PensionItem";
-import OurRooms from "../partials/ourrooms/OurRooms";
-import "./Landing.scss";
+import PensionItem from "components/PensionItem";
+import OurRooms from "partials/ourrooms/OurRooms";
+import Reviews from "partials/reviews/Reviews";
+import "./Landing.css";
+import PensionMap from "components/PensionMap";
+import Contact from "partials/contact/Contact";
+import Footer from "partials/footer/Footer";
 
 function Landing() {
   return (
     <>
-      <div className="about-us-container">
-        <div className="about-us-container_wrapper">
+      <div className="about-us">
+        <div className="wrapper">
           <img alt="" src={require("../assets/tt.jpeg")} />
-          <div className="about-us-container_wrapper_about-us">
-            <div className="about-us-container_wrapper_about-us_divider"></div>
+          <div className="content">
+            <div className="divider"></div>
             <h1>Penziony v centru lázní</h1>
             <p>
               Vítejte na stránkách našich penzionů. Pevně věříme, že si u nás
@@ -27,8 +31,8 @@ function Landing() {
         </div>
       </div>
 
-      <div className="pensions-container">
-        <div className="pensions-container-wrapper">
+      <div className="pensions">
+        <div className="wrapper">
           <PensionItem image="tt" pensionName="Penzion Ječmínek I" />
           <PensionItem image="tt" pensionName="Penzion Ječmínek II" />
           <PensionItem image="tt" pensionName="Penzion Agape" />
@@ -36,6 +40,15 @@ function Landing() {
       </div>
 
       <OurRooms />
+
+      <Reviews />
+
+      <div className="contact-map">
+        <PensionMap />
+        <Contact />
+      </div>
+
+      <Footer />
     </>
   );
 }
