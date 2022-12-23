@@ -1,7 +1,7 @@
 import "./GalleryBullet.css";
 
-function GalleryBullet() {
-  return <div className="bullet"></div>;
+function GalleryBullet(props) {
+  return <div onClick={props.onClick} className="bullet"></div>;
 }
 
 export default GalleryBullet;
