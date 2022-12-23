@@ -11,7 +11,7 @@ function Landing() {
     <>
       <div className="about-us">
         <div className="wrapper">
-          <img alt="" src={require("../assets/tt.jpeg")} />
+          <img alt="" src={require("assets/tt.jpg")} />
           <div className="content">
             <div className="divider"></div>
             <h1>Penziony v centru lázní</h1>

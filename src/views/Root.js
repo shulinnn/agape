@@ -8,7 +8,7 @@ function Root() {
     <>
       <Navbar />
       <div className="header">
-        <img src={require("../assets/tt.jpeg")} alt="penzion agape" />
+        <img src={require("assets/tt.jpg")} alt="penzion agape" />
       </div>
       <div className="header-reservation">
         <div className="wrapper">
