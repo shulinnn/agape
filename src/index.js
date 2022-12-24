@@ -3,11 +3,16 @@ import ReactDOM from "react-dom/client";
 import Root from "views/Root";
 import "main.css";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  HashRouter,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import Landing from "views/Landing";
 import Error404 from "views/Error404";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
