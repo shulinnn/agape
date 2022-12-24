@@ -3,7 +3,7 @@ import "./OurRoom.css";
 
 function OurRoom(props) {
   return (
-    <div className="our-room-container">
+    <div className="our-room-container" onClick={props.onClick}>
       <div className="wrapper">
         <img alt="" src={require("../assets/ll.jpg")} />
         <div className="room">

@@ -2,46 +2,10 @@ import Review from "components/Review";
 import GalleryBullet from "components/GalleryBullet";
 import "./Reviews.css";
 import React, { useState } from "react";
-import { queryAllByAltText } from "@testing-library/react";
 
 function Reviews() {
   /// Fake Data from API will change later
-  const data = {
-    reviews: [
-      {
-        id: 0,
-        reviewerName: "Petr Jahoda",
-        reviewStars: 3,
-        reviewContent:
-          "Příjemné ubytování v blízkosti autobusového nádraží. Všude čisto, útulný pokoj. Určitě všem doporučuji!",
-        reviewFrom: "Google.com",
-      },
-      {
-        id: 1,
-        reviewerName: "Petr Rychlý",
-        reviewStars: 5,
-        reviewContent:
-          "Příjemné ubytování v blízkosti autobusového nádraží. Všude čisto, útulný pokoj. Určitě všem doporučuji!",
-        reviewFrom: "Google.com",
-      },
-      {
-        id: 2,
-        reviewerName: "Michal Němec",
-        reviewStars: 3,
-        reviewContent:
-          "Penzion kde cena odpovídá kvalitě. Nutno vyzvednout dobrou lokalitu. Michal Němec",
-        reviewFrom: "Google.com",
-      },
-      {
-        id: 3,
-        reviewerName: "Michaela Přibylová",
-        reviewStars: 5,
-        reviewContent:
-          "Krásný apartmán, čisto, pěkný objekt, parkování přímo za penzionem, velice příjemná a vstřícná paní, doporučuji 😀",
-        reviewFrom: "Google.com",
-      },
-    ],
-  };
+  const data = require("api/test.json");
 
   const [actualIndex, setActualIndex] = useState(0);
 

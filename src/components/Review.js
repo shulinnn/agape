@@ -1,12 +1,7 @@
 import StarIcon from "./StarIcon";
 import "./Review.css";
-import React, { useEffect, useState } from "react";
 
 function Review(props) {
-  useEffect(() => {
-    console.log("Updated");
-  });
-
   const fakeStars = props.reviewStars;
 
   /// we should build array like this [1,1,1,0,0];
