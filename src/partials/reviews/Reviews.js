@@ -32,6 +32,7 @@ function Reviews() {
               return (
                 <GalleryBullet
                   onClick={() => handleBulletClick(index.id)}
+                  isActive={actualIndex === index.id && true}
                   key={index.id}
                 />
               );
