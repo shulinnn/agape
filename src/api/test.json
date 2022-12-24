@@ -1,0 +1,108 @@
+{
+    "rooms": [
+        {
+            "id": 1,
+            "prices": [
+                {
+                    "price": 990
+                },
+                {
+                    "price": 1150
+                }
+            ],
+            "tags": [
+                {
+                    "tagId": 1,
+                    "tagName": "tv"
+                },
+                {
+                    "tagId": 2,
+                    "tagName": "koupelna"
+                },
+                {
+                    "tagId": 3,
+                    "tagName": "radio"
+                }
+            ],
+            "photos": [
+                {
+                    "id": 0,
+                    "photoPath": "8bc51668-63c5-4dbc-8cda-4c01fa250ae1"
+                },
+                {
+                    "id": 1,
+                    "photoPath": "8e670936-a3c7-462d-9c8c-b38e7c21ceab"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "prices": [
+                {
+                    "price": 990
+                },
+                {
+                    "price": 1150
+                }
+            ],
+            "tags": [
+                {
+                    "tagId": 1,
+                    "tagName": "tv"
+                },
+                {
+                    "tagId": 2,
+                    "tagName": "koupelna"
+                },
+                {
+                    "tagId": 3,
+                    "tagName": "radio"
+                }
+            ],
+            "photos": [
+                {
+                    "id": 0,
+                    "photoPath": "0c0f12fe-0619-4aa7-a6bd-ecaaad406f4d"
+                },
+                {
+                    "id": 1,
+                    "photoPath": "4f74f772-4e9a-4aa3-be3d-c769f92922f7"
+                },
+                {
+                    "id": 2,
+                    "photoPath": "8f79f3b8-c53a-4d07-afe5-7301f8b45eaa"
+                }
+            ]
+        }
+    ],
+    "reviews": [
+        {
+            "id": 0,
+            "reviewerName": "Petr Jahoda",
+            "reviewStars": 3,
+            "reviewContent": "Příjemné ubytování v blízkosti autobusového nádraží. Všude čisto, útulný pokoj. Určitě všem doporučuji!",
+            "reviewFrom": "Google.com"
+        },
+        {
+            "id": 1,
+            "reviewerName": "Petr Rychlý",
+            "reviewStars": 5,
+            "reviewContent": "Příjemné ubytování v blízkosti autobusového nádraží. Všude čisto, útulný pokoj. Určitě všem doporučuji!",
+            "reviewFrom": "Google.com"
+        },
+        {
+            "id": 2,
+            "reviewerName": "Michal Němec",
+            "reviewStars": 3,
+            "reviewContent": "Penzion kde cena odpovídá kvalitě. Nutno vyzvednout dobrou lokalitu. Michal Němec",
+            "reviewFrom": "Google.com"
+        },
+        {
+            "id": 3,
+            "reviewerName": "Michaela Přibylová",
+            "reviewStars": 5,
+            "reviewContent": "Krásný apartmán, čisto, pěkný objekt, parkování přímo za penzionem, velice příjemná a vstřícná paní, doporučuji 😀",
+            "reviewFrom": "Google.com"
+        }
+    ]
+}

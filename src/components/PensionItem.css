@@ -1,0 +1,35 @@
+.pension-item-wrapper {
+  font-family: "Merriweather", serif;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border: 16px solid white;
+}
+
+.pension-item-wrapper > img {
+  overflow: hidden;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.pension-item-wrapper > img:hover {
+  transform: scale(1.25);
+}
+
+.pension-item-wrapper > span {
+  position: absolute;
+  bottom: 1rem;
+  left: -16rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 1024px) {
+  .pension-item-wrapper > span {
+    left: -24rem;
+  }
+}

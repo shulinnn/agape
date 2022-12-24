@@ -1,0 +1,17 @@
+.bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #b4b4b4;
+  transition: all;
+  transition-duration: 200ms;
+  border-radius: 9999px;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.bullet:hover {
+  background-color: #839f18;
+}
+
+.bullet.active {
+  background-color: #839f18;
+}

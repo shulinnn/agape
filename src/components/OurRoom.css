@@ -1,0 +1,64 @@
+.our-room-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.our-room-container:hover {
+  background-color: #efedee;
+}
+
+.our-room-container > .wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  row-gap: 0.75rem;
+}
+
+.our-room-container > .wrapper > img {
+  width: 33.333333%;
+  object-fit: cover;
+}
+
+.our-room-container > .wrapper > .room {
+  display: flex;
+  flex-direction: column;
+  font-family: "Merriweather", serif !important;
+  justify-content: space-between;
+}
+
+.our-room-container > .wrapper > .room > h1 {
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+}
+
+.our-room-container > .wrapper > .room > span {
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.our-room-container > .wrapper > .room > .tags {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+@media (min-width: 1024px) {
+  .our-room-container > .wrapper > img {
+    width: 16.666667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .our-room-container > .wrapper > img {
+    width: 30%;
+  }
+}

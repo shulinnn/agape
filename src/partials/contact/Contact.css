@@ -1,0 +1,56 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 4rem /* 64px */;
+  padding-bottom: 4rem /* 64px */;
+  padding-left: 1rem /* 16px */;
+  padding-right: 1rem /* 16px */;
+  padding-left: 1rem /* 16px */;
+  padding-right: 1rem /* 16px */;
+  row-gap: 2rem /* 32px */;
+}
+
+.contact-container > span {
+  text-transform: uppercase;
+  color: #787878;
+}
+
+.contact-container > h1 {
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+}
+
+.contact-container > .item {
+  display: flex;
+  flex-direction: row;
+  row-gap: 2rem /* 32px */;
+  column-gap: 0.5rem /* 8px */;
+  align-items: center;
+}
+
+.contact-container > .item > span {
+  color: #787878;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-container {
+    padding-left: 2rem /* 32px */;
+    padding-right: 2rem /* 32px */;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact-container {
+    padding-left: 8rem /* 128px */;
+    padding-right: 8rem /* 128px */;
+  }
+}

@@ -1,16 +1,30 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./main.scss";
+import Root from "views/Root";
+import "main.css";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Landing from "views/Landing";
+import Error404 from "views/Error404";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <Error404 />,
+    children: [
+      {
+        path: "/",
+        element: <Landing />,
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+body,
+html {
+  @apply bg-[#F2F2F2];
+}
+
+.merriweather {
+  font-family: "Merriweather", "serif";
+}
+
+.playfair {
+  font-family: "Playfair Display", "serif";
+}
+
+.test {
+  animation: swipe-to-right 1s;
+}
+
+@keyframes swipe-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rollout {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
