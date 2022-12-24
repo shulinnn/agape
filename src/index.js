@@ -8,6 +8,7 @@ import {
   HashRouter,
   Route,
   RouterProvider,
+  createHashRouter,
 } from "react-router-dom";
 import Landing from "views/Landing";
 import Error404 from "views/Error404";
