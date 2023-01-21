@@ -6,6 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createHashRouter } from "react-router-dom";
 import Landing from "views/Landing";
 import Error404 from "views/Error404";
+import AboutUs from "views/AboutUs";
+import Gallery from "views/Gallery";
+import Reservation from "views/Reservation";
+import Avaiability from "views/Availability";
+import Contact from "views/Contact";
+import OurRooms from "views/OurRooms";
+import Room from "views/Room";
 
 const router = createHashRouter([
   {
@@ -16,6 +23,34 @@ const router = createHashRouter([
       {
         path: "/",
         element: <Landing />,
+      },
+      {
+        path: "/o-nas",
+        element: <AboutUs />,
+      },
+      {
+        path: "/galerie",
+        element: <Gallery />,
+      },
+      {
+        path: "/rezervace",
+        element: <Reservation />,
+      },
+      {
+        path: "/dostupnost/:arrival/:depart",
+        element: <Avaiability />,
+      },
+      {
+        path: "/kontakt",
+        element: <Contact />,
+      },
+      {
+        path: "/nase-pokoje",
+        element: <OurRooms />,
+      },
+      {
+        path: "/pokoj/:id",
+        element: <Room />,
       },
     ],
   },

@@ -8,9 +8,6 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  ///
-  /// Comment comes here
-  ///
   function handleToggle() {
     setIsOpen(!isOpen);
   }
@@ -23,14 +20,24 @@ function Navbar() {
             <Link to={"/"}>
               <li>ÚVOD</li>
             </Link>
-            <li>O NÁS</li>
-            <li>NAŠE POKOJE</li>
+            <Link to={"/o-nas"}>
+              <li>O NÁS</li>
+            </Link>
+            <Link to={"/nase-pokoje"}>
+              <li>POKOJE</li>
+            </Link>
           </ul>
-          <span>Penziony Luhačovice</span>
+          <span>Penzion Agape</span>
           <ul>
-            <li>GALERIE</li>
-            <li>KONTAKT</li>
-            <li>REZERVACE</li>
+            <Link to={"/galerie"}>
+              <li>GALERIE</li>
+            </Link>
+            <Link to={"/rezervace"}>
+              <li>REZERVACE</li>
+            </Link>
+            <Link to={"/kontakt"}>
+              <li>KONTAKT</li>
+            </Link>
           </ul>
           {!isOpen ? (
             <Menu

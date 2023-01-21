@@ -26,7 +26,7 @@ function Review(props) {
         })}
       </div>
       <div className="reviewer">
-        <span>{props.reviewerName} -</span>
+        <span>{props.reviewerName}</span>
         <span>recenze z</span>
         <span>{props.reviewFrom}</span>
       </div>

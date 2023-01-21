@@ -1,0 +1,45 @@
+.contact-container {
+  @apply container;
+  @apply mx-auto;
+  @apply px-4;
+  @apply lg:px-24;
+  @apply mt-16;
+}
+
+.contact-container > form {
+  @apply flex;
+  @apply flex-col;
+  @apply my-4;
+  @apply gap-y-6;
+  @apply md:px-32;
+  @apply mb-16;
+}
+
+.contact-container > form > .input-wrapper {
+  @apply flex;
+  @apply flex-col;
+  @apply gap-y-4;
+}
+
+.contact-container > form > .input-wrapper > label {
+  @apply text-xl;
+  @apply text-black;
+}
+
+.contact-container > form > .input-wrapper > input {
+  @apply outline-none;
+  @apply p-4;
+}
+
+.contact-container > form > .input-wrapper > textarea {
+  @apply outline-none;
+  @apply p-4;
+}
+
+.contact-container > form > .input-wrapper > .button {
+  @apply p-4;
+  @apply text-center;
+  @apply bg-[#839f18];
+  @apply text-white;
+  @apply font-semibold;
+}

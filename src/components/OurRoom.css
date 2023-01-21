@@ -15,12 +15,13 @@
 .our-room-container > .wrapper {
   display: flex;
   flex-direction: row;
-  column-gap: 1rem;
-  row-gap: 0.75rem;
+  column-gap: 0.5rem;
+  row-gap: 1;
+  flex-wrap: wrap;
 }
 
 .our-room-container > .wrapper > img {
-  width: 33.333333%;
+  width: 90px;
   object-fit: cover;
 }
 

@@ -8,6 +8,7 @@
 
 .pension-item-wrapper > img {
   overflow: hidden;
+  width: 100%;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
