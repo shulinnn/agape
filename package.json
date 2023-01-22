@@ -1,7 +1,7 @@
 {
   "name": "agape",
   "version": "0.1.0",
-  "homepage": "https://shulinnn.github.io/agape",
+  "homepage": ".",
   "proxy": "http:///127.0.0.1:4000/",
   "private": true,
   "dependencies": {
