@@ -38,7 +38,7 @@ function Contact() {
       }),
     };
 
-    const response = await fetch("/contact", requestOptions);
+    const response = await fetch("api/contact", requestOptions);
     console.log("sent !");
   }
 
