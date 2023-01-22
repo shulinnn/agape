@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import PensionMap from "components/PensionMap";
 import Contact from "partials/contact/Contact";
 import Footer from "partials/footer/Footer";
+import { useParams } from "react-router-dom";
 
 function Room() {
   const [data, setData] = useState([]);
@@ -9,7 +10,7 @@ function Room() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("http://localhost:4000/gallery", {
+    const response = await fetch("/gallery/" + params.id, {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -21,19 +22,22 @@ function Room() {
     setIsLoading(false);
   };
 
+  const params = useParams();
+
   useEffect(() => {
     getApiData();
+    console.log(params.id);
   }, []);
 
   const renderImages = () => {
     return data.map((photo, i) => {
       return (
         <div className="flex lg:basis-[30%] md:basis-[45%]" key={i}>
-          <a href={"http://localhost:4000/" + photo.photo_path}>
+          <a href={"http://194.182.80.246:4000/" + photo.photo_path}>
             <img
               alt="img-alt"
               className="object-fit border-8 border-white w-[20rem] h-[20rem]"
-              src={"http://localhost:4000/" + photo.photo_path}
+              src={"http://194.182.80.246:4000/" + photo.photo_path}
             />
           </a>
         </div>

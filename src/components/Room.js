@@ -49,10 +49,18 @@ function Room(props) {
     <img
       className="w-full h-[24rem] object-cover"
       src={
-        "http://localhost:4000/" + props.data.Photo[actualImageIndex].photo_path
+        "http://194.182.80.246:4000/" +
+        props.data.Photo[actualImageIndex].photo_path
       }
     />
   );
+
+  const computeRoomType = (roomType) => {
+    if (roomType == "SINGLE") return "Jednolůžkový";
+    if (roomType == "DOUBLE") return "Dvoulůžkový";
+    if (roomType == "TRIPLE") return "Třílůžkový";
+    if (roomType == "QUAD") return "Čtyřlůžkový";
+  };
 
   /*   const renderBullet = props.data.Photo((data, i) => (
     <GalleryBullet key={i} isActive={actualImageIndex === i && true} />
@@ -61,19 +69,20 @@ function Room(props) {
   return (
     <div
       className="bg-white flex flex-col lg:flex-row shadow-lg"
-      style={{ fontFamily: "Meriweather, sans-serif" }}
+      style={{ fontFamily: "Merriweather, sans-serif" }}
     >
       <div className="flex w-full lg:w-1/2 flex-col gap-y-4 p-8 justify-between">
-        <h1 className="text-2xl">Pokoj č.1 - Jednolůžkový</h1>
-        <div className="flex flex-row gap-x-4">
-          <RoomTag tagName="TV" />
-        </div>
+        <h1 className="text-2xl">
+          Pokoj č.{props.data.room_number} -{" "}
+          {computeRoomType(props.data.Room_type)}
+        </h1>
+        <div className="flex flex-row flex-wrap gap-4">{renderTags}</div>
         <div className="flex flex-col">{renderPrices()}</div>
         <Link
           to={"/pokoj/" + props.data.room_number}
           className="w-full text-center text-white font-semibold cursor-pointer bg-[#839f18] py-8"
         >
-          VICE INFO
+          VÍCE INFO
         </Link>
       </div>
       <div className="flex w-full lg:w-1/2 relative p-6">

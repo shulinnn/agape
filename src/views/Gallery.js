@@ -9,7 +9,7 @@ function Gallery() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("http://localhost:4000/gallery", {
+    const response = await fetch("/gallery", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -28,10 +28,10 @@ function Gallery() {
           className="lg:basis-[30%] md:basis-[45%] border-[16px] border-white overflow-hidden cursor-pointer"
           key={i}
         >
-          <a href={"http://localhost:4000/" + photo.photo_path}>
+          <a href={"http://194.182.80.246:4000/" + photo.photo_path}>
             <img
               className="hover:scale-125 transition-all object-cover duration-500 ease-in-out"
-              src={"http://localhost:4000/" + photo.photo_path}
+              src={"http://194.182.80.246:4000/" + photo.photo_path}
             />
           </a>
         </div>

@@ -60,7 +60,7 @@ function OurRooms() {
         <img
           alt=""
           src={
-            "http://localhost:4000/" +
+            "http://194.182.80.246:4000/" +
             data[actualIndex].Photo[actualImageIndex].photo_path
           }
         />

@@ -13,7 +13,7 @@ function Landing() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("http://localhost:4000/landing/1", {
+    const response = await fetch("/landing/1", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -25,7 +25,7 @@ function Landing() {
   };
 
   const getMoreApiData = async () => {
-    const response = await fetch("http://localhost:4000/pensions", {
+    const response = await fetch("/pensions", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -39,7 +39,7 @@ function Landing() {
   const renderPen = moreData.map((data, i) => (
     <PensionItem
       key={i}
-      image={"http://localhost:4000/" + data.pension_photo}
+      image={"http://194.182.80.246:4000/" + data.pension_photo}
       pensionName={data.pension_name}
     />
   ));
@@ -53,7 +53,10 @@ function Landing() {
     <>
       <div className="about-us">
         <div className="wrapper">
-          <img alt="" src={"http://localhost:4000/" + data.pension_photo} />
+          <img
+            alt=""
+            src={"http://194.182.80.246:4000/" + data.pension_photo}
+          />
           <div className="content">
             <div className="divider"></div>
             <h1>Penziony v centru lázní</h1>

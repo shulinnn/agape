@@ -9,7 +9,7 @@ function AboutUs() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("http://localhost:4000/about-us/1", {
+    const response = await fetch("/about-us/1", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -32,10 +32,10 @@ function AboutUs() {
           className="lg:basis-[30%] md:basis-[45%] border-[16px] border-white overflow-hidden cursor-pointer"
           key={i}
         >
-          <a href={"http://localhost:4000/" + photo.photo_path}>
+          <a href={"http://194.182.80.246:4000/" + photo.photo_path}>
             <img
               className="hover:scale-125 transition-all duration-500 ease-in-out"
-              src={"http://localhost:4000/" + photo.photo_path}
+              src={"http://194.182.80.246:4000/" + photo.photo_path}
             />
           </a>
         </div>

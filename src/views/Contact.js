@@ -38,10 +38,7 @@ function Contact() {
       }),
     };
 
-    const response = await fetch(
-      "http://localhost:4000/contact",
-      requestOptions
-    );
+    const response = await fetch("/contact", requestOptions);
     console.log("sent !");
   }
 
