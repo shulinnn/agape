@@ -11,7 +11,7 @@ function OurRoom(props) {
       <div className="wrapper">
         <img
           alt=""
-          className="h-[10rem] object-cover"
+          className="h-[10rem] w-full object-cover"
           src={"http://194.182.80.246:4000/" + props.data.Photo[0].photo_path}
         />
         <div className="room">
