@@ -2,7 +2,7 @@
   "name": "agape",
   "version": "0.1.0",
   "homepage": ".",
-  "proxy": "194.182.80.246:4000",
+  "proxy": "http://194.182.80.246:4000",
   "private": true,
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.35",
