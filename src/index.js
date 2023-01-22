@@ -3,11 +3,18 @@ import ReactDOM from "react-dom/client";
 import Root from "views/Root";
 import "main.css";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Landing from "views/Landing";
 import Error404 from "views/Error404";
+import AboutUs from "views/AboutUs";
+import Gallery from "views/Gallery";
+import Reservation from "views/Reservation";
+import Avaiability from "views/Availability";
+import Contact from "views/Contact";
+import OurRooms from "views/OurRooms";
+import Room from "views/Room";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
@@ -16,6 +23,34 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Landing />,
+      },
+      {
+        path: "/o-nas",
+        element: <AboutUs />,
+      },
+      {
+        path: "/galerie",
+        element: <Gallery />,
+      },
+      {
+        path: "/rezervace",
+        element: <Reservation />,
+      },
+      {
+        path: "/dostupnost/:arrival/:depart",
+        element: <Avaiability />,
+      },
+      {
+        path: "/kontakt",
+        element: <Contact />,
+      },
+      {
+        path: "/nase-pokoje",
+        element: <OurRooms />,
+      },
+      {
+        path: "/pokoj/:id",
+        element: <Room />,
       },
     ],
   },

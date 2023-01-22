@@ -19,12 +19,10 @@
 }
 
 .about-us > .wrapper > .content > .divider {
-  width: 50%;
-  border-radius: 0.25rem /* 4px */;
-  border-width: 1px;
-  border-color: #8080807a;
-  margin-top: 1rem /* 16px */;
-  margin-bottom: 1rem /* 16px */;
+  width: 127px;
+  border: 1px solid #8080805b;
+  margin-top: 3rem /* 16px */;
+  margin-bottom: 2rem /* 16px */;
 }
 
 .about-us > .wrapper > .content > h1 {
@@ -95,6 +93,7 @@
   .about-us > .wrapper > .content {
     display: flex;
     flex-direction: column;
+    padding-left: 4rem;
   }
   .about-us > .wrapper > .content > .divider {
     width: 20%;

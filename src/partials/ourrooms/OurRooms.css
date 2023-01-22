@@ -16,7 +16,9 @@
 .our-rooms-container > .rooms-container > .wrapper {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
   row-gap: 1rem;
 }
 
@@ -62,6 +64,14 @@
   position: absolute;
   bottom: 1rem;
   column-gap: 1rem;
+}
+
+.my-rooms-enter {
+  opacity: 0;
+}
+.my-rooms-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
 }
 
 @media (min-width: 1024px) {

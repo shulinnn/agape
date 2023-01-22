@@ -1,5 +1,5 @@
 function StarIcon(props) {
-  if (props.isFilled == true) {
+  if (props.isFilled === true) {
     return (
       <svg
         width="24"
@@ -17,7 +17,7 @@ function StarIcon(props) {
       </svg>
     );
   }
-  if (props.isFilled == false) {
+  if (props.isFilled === false) {
     return (
       <svg
         width="24"
