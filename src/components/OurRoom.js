@@ -12,7 +12,7 @@ function OurRoom(props) {
         <img
           alt=""
           className="h-[10rem] object-cover"
-          src={"http://localhost:4000/" + props.data.Photo[0].photo_path}
+          src={"http://194.182.80.246:4000/" + props.data.Photo[0].photo_path}
         />
         <div className="room">
           <h1>Pokoj č. {props.data.room_number}</h1>

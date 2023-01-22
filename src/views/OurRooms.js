@@ -28,7 +28,7 @@ function OurRooms() {
 
   return (
     <>
-      <div className="container mx-auto lg:px-24 mt-16 mb-16">
+      <div className="container mx-auto lg:px-[12rem] mt-16 mb-16">
         <div className="flex flex-col gap-y-8 px-2">{renderRooms}</div>
       </div>
 

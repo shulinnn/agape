@@ -24,7 +24,7 @@ function Root() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("http://localhost:4000/landing/1", {
+    const response = await fetch("/landing/1", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -67,7 +67,7 @@ function Root() {
 
   // Function to collect data
   const getRoomData = async () => {
-    const response = await fetch("http://localhost:4000/roomData/1", {
+    const response = await fetch("/roomData/1", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -155,7 +155,7 @@ function Root() {
       <Navbar />
       <div className="header">
         <img
-          src={"http://localhost:4000/" + data.pension_photo}
+          src={"http://194.182.80.246:4000/" + data.pension_photo}
           alt={data.pension_name}
         />
       </div>
