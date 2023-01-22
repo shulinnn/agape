@@ -14,7 +14,7 @@ function Reviews() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("/reviews", {
+    const response = await fetch("api/reviews", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',

@@ -10,7 +10,7 @@ function Room() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("/gallery/" + params.id, {
+    const response = await fetch("api/gallery/" + params.id, {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',

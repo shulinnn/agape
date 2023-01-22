@@ -9,7 +9,7 @@ function AboutUs() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("/about-us/1", {
+    const response = await fetch("api/about-us/1", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',

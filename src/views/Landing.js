@@ -13,7 +13,7 @@ function Landing() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("/landing/1", {
+    const response = await fetch("api/landing/1", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
