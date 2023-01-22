@@ -9,7 +9,7 @@ function OurRooms() {
 
   // Function to collect data
   const getApiData = async () => {
-    const response = await fetch("http://localhost:4000/rooms/1", {
+    const response = await fetch("/rooms/1", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
