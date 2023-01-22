@@ -67,7 +67,7 @@ function Root() {
 
   // Function to collect data
   const getRoomData = async () => {
-    const response = await fetch("/roomData/1", {
+    const response = await fetch("api/roomData/1", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',

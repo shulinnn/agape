@@ -25,7 +25,7 @@ function Landing() {
   };
 
   const getMoreApiData = async () => {
-    const response = await fetch("/pensions", {
+    const response = await fetch("api/pensions", {
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
