@@ -52,12 +52,24 @@ function Navbar() {
         </div>
         {isOpen && (
           <ul className="mobile-menu">
-            <NavbarLink linkName="ÚVOD" />
-            <NavbarLink linkName="O NÁS" />
-            <NavbarLink linkName="NAŠE POKOJE" />
-            <NavbarLink linkName="GALERIE" />
-            <NavbarLink linkName="KONTAKT" />
-            <NavbarLink linkName="REZERVACE" />
+            <Link to={"/"}>
+              <NavbarLink linkName="ÚVOD" />
+            </Link>
+            <Link to={"/o-nas"}>
+              <NavbarLink linkName="O NÁS" />
+            </Link>
+            <Link to={"/nase-pokoje"}>
+              <NavbarLink linkName="NAŠE POKOJE" />
+            </Link>
+            <Link to={"/galerie"}>
+              <NavbarLink linkName="GALERIE" />
+            </Link>
+            <Link to={"/kontakt"}>
+              <NavbarLink linkName="KONTAKT" />
+            </Link>
+            <Link to={"/rezervace"}>
+              <NavbarLink linkName="REZERVACE" />
+            </Link>
           </ul>
         )}
       </div>
